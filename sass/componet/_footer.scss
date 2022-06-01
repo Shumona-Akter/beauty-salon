@@ -1,0 +1,16 @@
+@import "../variable/color";
+@import "../variable/heading1";
+@import "../mixin/mixin";
+footer{
+    background-color: $pink;
+    display: flex;
+    justify-content: space-between;
+   h1{
+       padding-top: 30px;
+       padding-bottom: 38px;
+       @include section_heading(capitalize,$open_font,16px,$light_dark,400);
+        span{
+            text-align: left;
+        }
+   }
+}

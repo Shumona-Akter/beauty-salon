@@ -1,0 +1,48 @@
+@import "../variable/color";
+@import "../variable/heading1";
+@import "../variable/paragraph";
+@import "../mixin/mixin";
+#service_part{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .heading{
+        @include heading
+    }
+    .item{
+        position: relative;
+        height: 235px;
+        margin-top: 70px;
+        overflow: hidden;
+        img{
+            transition: all linear 0.4s;
+        }
+        .item_name{
+            .item_name {
+                text-align: center;
+          }
+            h3{
+                position: absolute;
+                bottom: -30px;
+                left: 23px;
+                display: inline-block;
+                 @include section_heading(capitalize,$open_font,28px,$dark,400);
+                 padding: 20px 80px;
+                 background: $white;
+                 transition: all linear 0.2s;
+                 .icon_logo{
+                     color: $pink;
+                     font-weight: 400;
+                 }
+                 
+            }
+        }
+        &:hover h3{
+            bottom: 10px;
+            left: 23px;
+         }
+        &:hover img{
+            transform: scale(1.1);
+            overflow: hidden;
+        }
+    }
+}

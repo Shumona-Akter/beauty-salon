@@ -1,0 +1,21 @@
+@mixin heading {
+    h1{
+        position: relative;
+        padding-bottom: 60px;
+        @include section_heading(capitalize,$Oswald,28px,$pink,500);
+        span{
+            display: block;
+            padding-top: 15px;
+            @include section_heading(capitalize,$geat_font,20px,$dark,400);
+        }
+        &::after{
+            content: '';
+            width: 100px;
+            height: 1px;
+            background: $pink;
+            left: 0;
+            bottom: 38px;
+            position: absolute;
+        }
+    }
+}

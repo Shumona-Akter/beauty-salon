@@ -1,0 +1,9 @@
+@import "../variable/color";
+
+@mixin section_heading( $text_trannform,$font_family,$font_size,$color,$font_weight){
+    text-transform: $text_trannform;
+    font-family: $font_family ;
+    font-size: $font_size ;
+    color:$color ;
+    font-weight:$font_weight;
+}

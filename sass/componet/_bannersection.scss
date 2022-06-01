@@ -1,0 +1,32 @@
+@import "../variable/color";
+
+
+#banner_part{
+    padding-top:115px ;
+    padding-bottom: 160px;
+    h1{
+        font-size: 60px;
+        font-family: $oleo_font;
+        color: $white;
+        text-transform: uppercase;
+        span{
+            display: block;
+        }
+    }
+    a{
+        padding: 15px 40px;
+        background-color: $pink;
+        color: $white;
+        font-family: $open_font;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 40px;
+        transition: 0.3s;
+        &:hover{
+        background-color: $white;
+        color: $pink;
+
+        }
+    }
+    
+}

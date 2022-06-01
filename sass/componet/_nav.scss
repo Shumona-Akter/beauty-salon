@@ -1,0 +1,35 @@
+@import "../mixin/mixin";
+@import "../variable/heading1";
+@import "../variable/paragraph";
+@import "../variable/color";
+
+
+#nav_main{
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid var(--bran);
+    z-index: 1;
+    width: 100%;
+    .navbar-brand{
+            padding: 0;
+    }
+    .nav-item a{
+        text-transform: uppercase;
+        padding: 25px 15px;
+        position: relative;
+        transition: all linear 0.4s;
+        color: $white;
+        font-family: $open_font;
+        font-size: 18px;
+        font-weight: 400;
+        transition: 0.3s;
+        &:hover{
+            color: $pink;
+        }
+    }
+
+
+
+}
